@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: section-project-deployment
+  labels:
+    app: console-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: console-project
+  template:
+    metadata:
+      labels:
+        app: console-project
+    spec:
+      containers:
+        - name: console-project
+          image: ghcr.io/${IMAGE_NAME}:main
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "200Mi"
+              cpu: "200m"
+            limits:
+              memory: "200Mi"
+              cpu: "200m"
+          ports:
+            - containerPort: 80
+          env:
+            - name: APP_NAME
+              value: "Laravel"
+            - name: APP_ENV
+              value: "production"
+            - name: APP_KEY
+              value: "base64:w2WomGpr11NOQxjpiv/GNLxiJEla1X4pOwORG/t/nQs="
+            - name: APP_DEBUG
+              value: "false"
+            - name: APP_URL
+              value: "https://YOUR.DOMAIN.COM"
+
+            - name: LOG_CHANNEL
+              value: "stack"
+            - name: LOG_DEPRECATIONS_CHANNEL
+              value: "null"
+            - name: LOG_LEVEL
+              value: "debug"
+
+            - name: BROADCAST_DRIVER
+              value: "log"
+            - name: CACHE_DRIVER
+              value: "file"
+            - name: FILESYSTEM_DISK
+              value: "local"
+            - name: QUEUE_CONNECTION
+              value: "sync"
+            - name: SESSION_DRIVER
+              value: "cookie"
+            - name: SESSION_LIFETIME
+              value: "120"
+
+            - name: MAIL_MAILER
+              value: "smtp"
+            - name: MAIL_HOST
+              value: "mailhog"
+            - name: MAIL_PORT
+              value: "1025"
+            - name: MAIL_USERNAME
+              value: "null"
+            - name: MAIL_PASSWORD
+              value: "null"
+            - name: MAIL_ENCRYPTION
+              value: "null"
+            - name: MAIL_FROM_ADDRESS
+              value: "hello@example.com"
+            - name: MAIL_FROM_NAME
+              value: "Laravel"
