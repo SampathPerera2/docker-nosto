@@ -56,45 +56,7 @@ sectio<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
         <!-- Footer -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 lg:gap-10">
-            <div>
-                <p class="leading-7 font-semibold flex items-center mb-2">
-                    Go live
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" class="ml-1.5 w-5 h-5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7a15.53 15.53 0 0 1-.311.06 15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
-                </p>
-                <p class="text-sm leading-6 opacity-70">
-                    <a href="https://www.section.io/docs/guides/projects/dns/?utm_source=sp&utm_campaign=template&utm_medium=organic" target="_blank" rel="nofollow noopener" class="underline">Add a custom domain</a>, change your DNS, and take advantage of <a href="https://www.section.io/docs/guides/projects/ssl/?utm_source=sp&utm_campaign=template&utm_medium=organic" target="_blank" rel="nofollow noopener" class="underline">free SSL/TLS certificates</a>.
-                </p>
-            </div>
-
-            <div>
-                <p class="leading-7 font-semibold flex items-center mb-2">
-                    Optimize
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" class="ml-1.5 w-5 h-5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/></svg>
-                </p>
-                <p class="text-sm leading-6 opacity-70">
-                    <a href="https://www.section.io/pricing?utm_source=sp&utm_campaign=template&utm_medium=organic" target="_blank" rel="nofollow noopener" class="underline">Select the right plan</a> for your RAM and CPU requirements and choose the best global locations.
-                </p>
-            </div>
-
-            <div>
-                <p class="leading-7 font-semibold flex items-center mb-2">
-                    Observe
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" class="ml-1.5 w-5 h-5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
-                </p>
-                <p class="text-sm leading-6 opacity-70">
-                    <a href="https://www.section.io/docs/guides/monitor/?utm_source=sp&utm_campaign=template&utm_medium=organic" target="_blank" rel="nofollow noopener" class="underline">Send telemetry data</a> to your analytics provider for operational consistency and visibility.
-                </p>
-            </div>
-
-            <div>
-                <p class="leading-7 font-semibold flex items-center mb-2">
-                    Grow
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" class="ml-1.5 w-5 h-5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0-5.94-2.28m5.94 2.28-2.28 5.941"/></svg>
-                </p>
-                <p class="text-sm leading-6 opacity-70">
-                    <a href="https://www.section.io/docs/explanations/kubernetes/?utm_source=sp&utm_campaign=template&utm_medium=organic" target="_blank" rel="nofollow noopener" class="underline">Use Kubernetes resources</a> to deploy additional microservices in your global namespace.
-                </p>
-            </div>
+           
             <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
                 Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
             </div>
